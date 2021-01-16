@@ -1,4 +1,5 @@
 import sys
+from core.Adder import Adder
 
 if __name__ == "__main__":
     if (len(sys.argv) != 2):
@@ -9,4 +10,4 @@ if __name__ == "__main__":
     except ValueError:
          sys.exit('Received an invalid argument. Please enter an integer.')
 
-    print(1 + input)
+    print(Adder.oneAdder(input))
