@@ -8,5 +8,6 @@ app.register_blueprint(routes)
 def hello():
     return jsonify(about='Hello, WP!')
 
+# it appears that it is unnecessary to specify the port/localhost
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="localhost", port=5001, debug=True)
